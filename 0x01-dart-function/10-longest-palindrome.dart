@@ -9,7 +9,7 @@ String longestPalindrome(String s) {
             String sub = s.substring(start, end + 1);
 
             if (isPalindrome(sub)) {
-                if (sub.length > longest.length) {
+                if (longest == "none" || sub.length > longest.length) {
                     longest = sub;
                 }
             }
